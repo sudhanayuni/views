@@ -1,0 +1,166 @@
+use employee1;
+Database changed
+mysql> select * from project;
++-------+-------+----------+-------------+
+| prjId | empId | clientId | projectname |
++-------+-------+----------+-------------+
+|   561 |     1 |        3 | project1    |
+|   562 |     2 |        1 | project2    |
+|   563 |     3 |        2 | project3    |
+|   564 |     4 |        4 | project4    |
+|   565 |     7 |        6 | project5    |
++-------+-------+----------+-------------+
+5 rows in set (0.02 sec)
+
+mysql> create view pr as select * from client;
+Query OK, 0 rows affected (0.74 sec)
+
+mysql> select * from client;
++----------+-------------+-------------+-----------+
+| clientId | clientFname | clientSname | clientAge |
++----------+-------------+-------------+-----------+
+|        1 | sai         | namrith     |        22 |
+|        2 | sai         | naresh      |        23 |
+|        3 | nani        | sasi        |        25 |
+|        4 | syed        | arfath      |        22 |
+|        5 | sri         | latha       |        23 |
++----------+-------------+-------------+-----------+
+5 rows in set (0.02 sec)
+
+mysql> select * from pr;
++----------+-------------+-------------+-----------+
+| clientId | clientFname | clientSname | clientAge |
++----------+-------------+-------------+-----------+
+|        1 | sai         | namrith     |        22 |
+|        2 | sai         | naresh      |        23 |
+|        3 | nani        | sasi        |        25 |
+|        4 | syed        | arfath      |        22 |
+|        5 | sri         | latha       |        23 |
++----------+-------------+-------------+-----------+
+5 rows in set (0.26 sec)
+
+mysql> select * from client;
++----------+-------------+-------------+-----------+
+| clientId | clientFname | clientSname | clientAge |
++----------+-------------+-------------+-----------+
+|        1 | sai         | namrith     |        22 |
+|        2 | sai         | naresh      |        23 |
+|        3 | nani        | sasi        |        25 |
+|        4 | syed        | arfath      |        22 |
+|        5 | sri         | latha       |        23 |
++----------+-------------+-------------+-----------+
+5 rows in set (0.00 sec)
+
+mysql> create view cl as select * from project;
+Query OK, 0 rows affected (0.14 sec)
+
+mysql> select * from project;
++-------+-------+----------+-------------+
+| prjId | empId | clientId | projectname |
++-------+-------+----------+-------------+
+|   561 |     1 |        3 | project1    |
+|   562 |     2 |        1 | project2    |
+|   563 |     3 |        2 | project3    |
+|   564 |     4 |        4 | project4    |
+|   565 |     7 |        6 | project5    |
++-------+-------+----------+-------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from cl;
++-------+-------+----------+-------------+
+| prjId | empId | clientId | projectname |
++-------+-------+----------+-------------+
+|   561 |     1 |        3 | project1    |
+|   562 |     2 |        1 | project2    |
+|   563 |     3 |        2 | project3    |
+|   564 |     4 |        4 | project4    |
+|   565 |     7 |        6 | project5    |
++-------+-------+----------+-------------+
+5 rows in set (0.00 sec)
+
+mysql> create view em as select * from employee;
+Query OK, 0 rows affected (0.19 sec)
+
+mysql> select * from employee;
++-------+-----------+----------+--------+
+| empId | emplFname | empsname | empAge |
++-------+-----------+----------+--------+
+| 1     | sudha     | reddy    |     22 |
+| 2     | sai       | rachana  |     23 |
+| 3     | sai       | pranathi |     25 |
+| 2     | sneha     | reddy    |     22 |
++-------+-----------+----------+--------+
+4 rows in set (0.12 sec)
+
+mysql> select * from em;
++-------+-----------+----------+--------+
+| empId | emplFname | empsname | empAge |
++-------+-----------+----------+--------+
+| 1     | sudha     | reddy    |     22 |
+| 2     | sai       | rachana  |     23 |
+| 3     | sai       | pranathi |     25 |
+| 2     | sneha     | reddy    |     22 |
++-------+-----------+----------+--------+
+4 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
